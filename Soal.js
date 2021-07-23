@@ -71,4 +71,4 @@ const data = [
    },
 ];
 
-console.log('${data[0].name} ada di kelas ${data[0].class}, dia mengikuti club ')
+console.log("${data[0].name} ada di kelas ${data[0].class}, dia mengikuti club ${data[0].club[0]}, ${data[0].club[1]}.");
