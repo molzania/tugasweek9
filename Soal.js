@@ -32,8 +32,8 @@ let kucing = {
 console.log("Nama: ", kucing.Nama);
 console.log("Jumlah Kaki: ", kucing.Kaki);
 console.log("Spesies: ", kucing.Spesies);
-console.log("Warna: ", kucing.Warna);
-console.log("Makanan: ", kucing.Makanan);
+console.log("Warna: ", kucing.Warna[0], ",", kucing.Warna[1], ",", kucing.Warna[2]);
+console.log("Makanan: ", kucing.Makanan[0], ",", kucing.Makanan[1]);
 console.log("Suara: ", kucing.Suara);
 console.log("Keahlian: ", kucing.Keahlian());
 
@@ -70,3 +70,5 @@ const data = [
      club: ['Membaca', 'Bulutangkis'],
    },
 ];
+
+console.log('${data[0].name} ada di kelas ${data[0].class}, dia mengikuti club ')
