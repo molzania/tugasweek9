@@ -109,3 +109,4 @@ const data = [
       return todo;
     }
 
+    console.log("Add:", add("Belajar Bahasa Korea"));
