@@ -69,6 +69,43 @@ const data = [
      class: 'Lizard',
      club: ['Membaca', 'Bulutangkis'],
    },
-];
+  ];
 
-console.log("${data[0].name} ada di kelas ${data[0].class}, dia mengikuti club ${data[0].club[0]}, ${data[0].club[1]}.");
+  console.log(data[0].name +  " ada di kelas " + data[0].class + " dia mengikuti " + data[0].club);
+  console.log(data[1].name +  " ada di kelas " + data[1].class + " dia mengikuti " + data[1].club);
+
+    //Jawaban Soal Nomor 3
+    // let todos = [
+    //   {id: 1, todo: "belajar coding"},
+    //   {id: 2, todo: "nanti tidur"}
+    // ]
+    
+    // Buatlah function CRUD sederhana pada data di atas
+    
+    let todos = [
+        {id: 1, todo: "belajar coding"},
+        {id: 2, todo: "nanti tidur"},
+    ];
+
+    function printAll() {
+      for (let i = 0; i < todos.length; i++) {
+        console.log(todos[i]);
+      };
+    };
+
+    printAll();
+
+    function printByID(id) {
+      return todos[id-1].todo;
+    }
+
+    console.log("Print by ID:", printByID(1));
+
+    function add(newTodo) {
+      todos.push({
+        id: todos.length - 1,
+        todo: newTodo,
+      })
+      return todo;
+    }
+
