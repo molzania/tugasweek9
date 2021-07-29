@@ -106,7 +106,25 @@ const data = [
         id: todos.length - 1,
         todo: newTodo,
       })
-      return todo;
+      return todos;
     }
 
-    console.log("Add:", add("Belajar Bahasa Korea"));
+    console.log("Add:", add("Ngerjain Tugas"));
+
+    function deleteByID(id) {
+      todos.splice(id - 1,1);
+      return todos;
+    }
+
+    console.log("Delete:", deleteByID(2));
+
+
+  function updateByID(id, todo) {
+ todos.map((id)=>{
+return {
+  id: todos.id,
+  title: todos.name
+}
+});}
+  
+ console.log("UpdateByID:", updateByID(1, "Belajar CRUD"));
