@@ -120,7 +120,8 @@ const data = [
 
 
     function updateByID(newTodo){
-      return todos[1].todo = newTodo;
+      todos[0].todo = newTodo;
+      return todos;
    }
 
   
