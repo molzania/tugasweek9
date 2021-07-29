@@ -119,12 +119,9 @@ const data = [
     console.log("Delete:", deleteByID(2));
 
 
-  function updateByID(id, todo) {
- todos.map((id)=>{
-return {
-  id: todos.id,
-  title: todos.name
-}
-});}
+    function updateByID(newTodo){
+      return todos[1].todo = newTodo;
+   }
+
   
- console.log("UpdateByID:", updateByID(1, "Belajar CRUD"));
+ console.log("UpdateByID:", updateByID("Belajar CRUD"));
