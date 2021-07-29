@@ -57,4 +57,7 @@ let buah = [
     }
 ]
 
-console.log(buah);
+
+
+
+
