@@ -1,3 +1,59 @@
 h1 {
     text-align: center;
+    font-size: 50px;
+}
+
+header{
+    padding: 30px;
+}
+
+#buah img {
+    width: 200px;
+    height:200px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#list-buah {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+#buah {
+    border: solid 1px black;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+
+p{
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    background-color: black;
 }

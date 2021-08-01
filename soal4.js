@@ -3,14 +3,14 @@ let buah = [
         Pic: './img/apple.png',
         Name: 'Apple',
         Color: 'Red',
-        Latin: 'Malus Sylvestris Mill',
+        Latin: 'Malus Mill',
         Seed: 'Single Seed'
     },
     {
         Pic: './img/banana.png',
         Name: 'Banana',
         Color: 'Yellow',
-        Latin: 'Musa Paradisiaca',
+        Latin: 'Musa',
         Seed: 'Double Seed'
     },
     {
@@ -24,7 +24,7 @@ let buah = [
         Pic: './img/cherry.png',
         Name: 'Cherry',
         Color: 'Dark Red',
-        Latin: 'Prunus subg. Cerasus',
+        Latin: 'Prunus Cerasus',
         Seed: 'Double Seed'
     },
     {
@@ -57,3 +57,15 @@ let buah = [
     }
 ]
 
+let listBuah = document.getElementById("list-buah");
+
+for(let i = 0; i <= buah.length; i++){
+    listBuah.innerHTML += `
+    <div id="buah"> 
+    <img src='${buah[i].Pic}'/>
+    <h3>${buah[i].Name}</h3>
+    <p>Color: ${buah[i].Color}</p>
+    <p>Latin Name: ${buah[i].Latin}</p>
+    <p>Seed Type: ${buah[i].Seed}</p>
+     </div>` 
+}
