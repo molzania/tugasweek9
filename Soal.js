@@ -111,10 +111,21 @@ const data = [
 
     console.log("Add:", add("Ngerjain Tugas"));
 
+    // function deleteByID(id) {
+    //   todos.splice(id - 1,1);
+    //   return todos;
+    // }
+
     function deleteByID(id) {
-      todos.splice(id - 1,1);
+   for(var i = 0; i>todos.length; i++){
+     if(todos[i].id == id){
+       todos.splice(i);
+       break;
+     }
+   }
       return todos;
     }
+
 
     console.log("Delete:", deleteByID(2));
 
@@ -127,10 +138,11 @@ const data = [
   function updateByID(id, newTodo){
     for(var i in todos){
       if(todos[i].id == id){
-        todos[i].desc = newTodo;
+        todos[i].todo = newTodo;
         break;
       }
     }
+    return todos;
   }
   
  console.log("UpdateByID:", updateByID(1,"Belajar CRUD"));
