@@ -119,10 +119,18 @@ const data = [
     console.log("Delete:", deleteByID(2));
 
 
-    function updateByID(newTodo){
-      todos[0].todo = newTodo;
-      return todos;
-   }
+  //   function updateByID(newTodo){
+  //     todos[0].todo = newTodo;
+  //     return todos;
+  //  }
 
+  function updateByID(id, newTodo){
+    for(var i in todos){
+      if(todos[i].id == id){
+        todos[i].desc = newTodo;
+        break;
+      }
+    }
+  }
   
- console.log("UpdateByID:", updateByID("Belajar CRUD"));
+ console.log("UpdateByID:", updateByID(1,"Belajar CRUD"));
