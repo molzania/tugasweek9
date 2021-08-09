@@ -85,6 +85,7 @@ const data = [
     let todos = [
         {id: 1, todo: "belajar coding"},
         {id: 2, todo: "nanti tidur"},
+        {id: 3, todo:"playing"},
     ];
 
     function printAll() {
@@ -117,17 +118,15 @@ const data = [
     // }
 
     function deleteByID(id) {
-   for(var i = 0; i>todos.length; i++){
-     if(todos[i].id == id){
-       todos.splice(i);
-       break;
-     }
-   }
-      return todos;
+      for (var i in todos) {
+        if (todos[i].id == id) {
+          return todos.splice(i,1);
+        }
+      } 
     }
 
-
     console.log("Delete:", deleteByID(2));
+    console.log("Todos", todos);
 
 
   //   function updateByID(newTodo){
