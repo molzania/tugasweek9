@@ -96,9 +96,18 @@ const data = [
 
     printAll();
 
+    // function printByID(id) {
+    //   return todos[id-1].todo;
+    // }
+
     function printByID(id) {
-      return todos[id-1].todo;
+      for (var i in todos) {
+        if (todos[i].id == id) {
+          return todos[i];
+        }
+      } 
     }
+    
 
     console.log("Print by ID:", printByID(1));
 
